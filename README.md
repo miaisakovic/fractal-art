@@ -1,5 +1,5 @@
-# Fractal Art
-Using L-systems and Python turtle graphics to create fractal art. 
+# L-System Drawings
+Using L-systems and Python turtle graphics to create art. 
 
 <p align="center">
   <img style="white-space: pre" width="300" height="280" src="https://github.com/miaisakovic/fractal-art/blob/main/images/sierpinski_arrowhead_curve.png"/>
