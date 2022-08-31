@@ -1,5 +1,5 @@
 # L-System Drawings
-Using L-systems and Python turtle graphics to create art. 
+Using Lindenmayer systems and Python turtle graphics to create art. 
 
 <p align="center">
   <img style="white-space: pre" width="300" height="280" src="https://github.com/miaisakovic/fractal-art/blob/main/images/sierpinski_arrowhead_curve.png"/>
@@ -12,7 +12,7 @@ Using L-systems and Python turtle graphics to create art.
   * [For Linux](#for-linux)
   * [For MacOS](#for-macos)
   * [After Installing Initial Requirements](#after-installing-initial-requirements)
-* [Viewing the Fractal Art](#viewing-the-fractal-art)
+* [Viewing the L-System Drawings](#viewing-the-l-system-drawings)
 
 ## Setup 
 ### For Linux
@@ -34,11 +34,11 @@ $ python3.9 --version
 ### After Installing Initial Requirements
 Clone this repository:
 ```
-$ git clone <fractal-art URL>
+$ git clone <l-system-drawings URL>
 ``` 
 When asked to enter credentials, input your username and personal access token.
 
-## Viewing the Fractal Art
+## Viewing the L-System Drawings
 To view the Sierpiński arrowhead curve, run the following command:
 ```
 $ python3.9 <relative path to sierpinski_arrowhead_curve.py>
