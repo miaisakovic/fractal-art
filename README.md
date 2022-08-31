@@ -3,7 +3,7 @@ Using L-systems and Python turtle graphics to create fractal art.
 
 <p align="center">
   <img style="white-space: pre" width="300" height="280" src="https://github.com/miaisakovic/fractal-art/blob/main/images/sierpinski_arrowhead_curve.png"/>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <img style="white-space: pre" width="300" height="280" src="https://github.com/miaisakovic/fractal-art/blob/main/images/l_system.png"/>
 </p>
 
