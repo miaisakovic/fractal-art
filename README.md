@@ -34,7 +34,7 @@ $ python3.9 --version
 ### After Installing Initial Requirements
 Clone this repository:
 ```
-$ git clone <l-system-drawings URL>
+$ git clone https://github.com/miaisakovic/l-system-drawings.git
 ``` 
 When asked to enter credentials, input your username and personal access token.
 
