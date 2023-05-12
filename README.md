@@ -1,4 +1,4 @@
-# L-System Drawings
+# L-system Drawings
 Using Lindenmayer systems and Python turtle graphics to create art. 
 
 <p align="center">
@@ -8,11 +8,54 @@ Using Lindenmayer systems and Python turtle graphics to create art.
 </p>
 
 ## Table of Contents
+* [Brief Introduction to L-systems](#brief-introduction-to-l-systems)
+  * [DOL-systems](#dol-systems)
+  * [Drawing L-systems](#drawing-l-systems)
+  * [Resources](#resources)
 * [Setup](#setup)
   * [For Linux](#for-linux)
   * [For MacOS](#for-macos)
   * [After Installing Initial Requirements](#after-installing-initial-requirements)
-* [Viewing the L-System Drawings](#viewing-the-l-system-drawings)
+* [Viewing the L-system Drawings](#viewing-the-l-system-drawings)
+
+## Brief Introduction to L-systems
+Lindenmayer systems (L-systems) are a string-rewriting process. They use a set of rules to recursively modify a string of symbols, transforming the initial string into something more complex. They are often applied in computer graphics, where they can be used to generate models of fractals and plants. 
+
+### DOL-systems
+The simplest type of L-system is a DOL-system. They are deterministic (there is exactly one way to transform each letter) and context-free (symbols from the preceding string are rewritten regardless of their position). 
+
+To better understand this system, consider this string of characters (symbols): 
+<p align="center">AB+A</p>
+
+This initial string is known as the axiom, where each letter corresponds to a rewriting rule. In this case, let the rules be:
+<p align="center">
+  A → A-B
+  <br/>
+  B → AB
+</p>
+
+After three iterations of this system, AB+A would be rewritten as the following:
+| Iteration | String                                |
+| :-------: |:-------------------------------------:|
+| 1         | A-BAB+A-B                             |
+| 2         | A-B-ABA-BAB+A-B-AB                    |
+| 3         | A-B-AB-A-BABA-B-ABA-BAB+A-B-AB-A-BAB  |
+
+### Drawing L-systems 
+By defining each symbol with an action, L-systems can be graphed. In particular, this project uses Python turtle graphics to draw two DOL-systems. Both use symbols with the following geometric interpretations:
+| Symbol             | Command                                                                  |
+| :----------------: |:------------------------------------------------------------------------ |
+| F                  | Move forward by drawing a line of a specified length                     |
+| A-Z (excluding F)  | Do nothing                                                               |
+| +                  | Turn right by a specified degree                                         |
+| -                  | Turn left by a specified degree                                          |
+| \[                 | Push the current position and direction of the pen/turtle onto a stack   |
+| \]                 | Pop the previous position and direction of the pen/turtle from a stack   |
+
+### Resources
+* [Bourke, P. (1991). *L-System User Notes*.](http://paulbourke.net/fractals/lsys/)
+* [Lindenmayer, A. & Prusinkiewicz, P. (1990). *The Algorithmic Beauty of Plants*. Springer.](http://algorithmicbotany.org/papers/abop/abop.pdf)
+* [Santell, J. (2019). *L-systems*.](https://jsantell.com/l-systems/)
 
 ## Setup 
 ### For Linux
@@ -38,7 +81,7 @@ $ git clone https://github.com/miaisakovic/l-system-drawings.git
 ``` 
 When asked to enter credentials, input your username and personal access token.
 
-## Viewing the L-System Drawings
+## Viewing the L-system Drawings
 To view the Sierpiński arrowhead curve, run the following command:
 ```
 $ python3.9 <relative path to sierpinski_arrowhead_curve.py>
