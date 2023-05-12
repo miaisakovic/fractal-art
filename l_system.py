@@ -21,7 +21,7 @@ iterations = 6
 
 def create_drawing(axiom, rules, angle, iterations):
     draw_str = axiom
-    for generation in range(iterations):
+    while iterations > 0:
         new_str = ""
         for char in draw_str:
             if (
@@ -32,6 +32,7 @@ def create_drawing(axiom, rules, angle, iterations):
             else:
                 new_str = new_str + char
         draw_str = new_str
+        iterations -= 1
 
     stack = []
     for char in draw_str:
