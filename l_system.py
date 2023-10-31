@@ -1,7 +1,7 @@
 import turtle
 
 t = turtle.Turtle()
-t.speed(10)
+t.speed("fastest")
 t.width(2)
 
 t.getscreen().colormode(255)
